@@ -3,10 +3,10 @@ package games.rookDefenders.tower.core;
 import games.rookDefenders.Cell;
 
 public abstract class Tower {
+
 	private Cell cellule;
 	private int cost;
 	private String name;
-
 
 	public Tower(Cell cellule, int cost, String name) {
 		super();

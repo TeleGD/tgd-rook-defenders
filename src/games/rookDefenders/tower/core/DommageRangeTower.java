@@ -2,12 +2,11 @@ package games.rookDefenders.tower.core;
 
 import games.rookDefenders.Cell;
 
-public class DommageRangeTower extends RangeTower{
+public class DommageRangeTower extends RangeTower {
 
 	private int dommage;
 
-	public DommageRangeTower(Cell cellule, int cost, String name, int rangeMin, int rangeMax,
-			int dommage1) {
+	public DommageRangeTower(Cell cellule, int cost, String name, int rangeMin, int rangeMax, int dommage1) {
 		super(cellule, cost, name, rangeMin, rangeMax);
 		dommage = dommage1;
 	}

@@ -1,14 +1,16 @@
 package games.rookDefenders.tower.core;
 
-import games.rookDefenders.*;
 import games.rookDefenders.Cell;
+import games.rookDefenders.World;
 
-public abstract class GeneratorRessourceTower extends Tower{
+public abstract class GeneratorRessourceTower extends Tower {
 
+	private World world;
 	private int giveRessource;
 
-	public GeneratorRessourceTower(Cell cellule, int cost, String name, int giveRessource) {
+	public GeneratorRessourceTower(World world, Cell cellule, int cost, String name, int giveRessource) {
 		super(cellule, cost, name);
+		this.world = world;
 		this.giveRessource = giveRessource;
 	}
 
@@ -20,11 +22,8 @@ public abstract class GeneratorRessourceTower extends Tower{
 		this.giveRessource = giveRessource;
 	}
 
-	public void action(){
-		World4.setRessources(World4.getRessources()+this.giveRessource);
+	public void action() {
+		this.world.setRessources(this.world.getRessources()+this.giveRessource);
 	}
-
-
-
 
 }

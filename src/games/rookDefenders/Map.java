@@ -2,14 +2,13 @@ package games.rookDefenders;
 
 import org.newdawn.slick.GameContainer;
 import org.newdawn.slick.Graphics;
-import org.newdawn.slick.SlickException;
 import org.newdawn.slick.state.StateBasedGame;
 
 public class Map {
 	private Cell[][] cells;
 	private int taille=10;
 
-	public Map(){
+	public Map() {
 		cells = new Cell[taille][taille];
 		for(int i=0;i<10;i++){
 			for(int j=0;j<10;j++){
@@ -20,8 +19,7 @@ public class Map {
 		roadBis(taille-1,taille-3);
 	}
 
-
-	private void roadBis(int i,int j){
+	private void roadBis(int i,int j) {
 		int a=i;
 		int b=j;
 		while (a>0){
@@ -75,7 +73,7 @@ public class Map {
 		}
 	}
 
-	private void road(int i,int j){
+	private void road(int i,int j) {
 		cells[i][j].setRoad();
 		if(i==0){
 			return;
@@ -128,13 +126,12 @@ public class Map {
 		}
 	}
 
-
-
-	public void render(GameContainer arg0, StateBasedGame arg1, Graphics arg2) throws SlickException {
+	public void render(GameContainer arg0, StateBasedGame arg1, Graphics arg2) {
 		for (int i=0;i<10;i++){
 			for(int j=0;j<10;j++){
 				cells[i][j].render(arg0, arg1, arg2);
 			}
 		}
 	}
+
 }

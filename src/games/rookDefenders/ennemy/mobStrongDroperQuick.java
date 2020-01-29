@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import games.rookDefenders.Cell;
 import games.rookDefenders.EnnemyDroper;
 
-public class mobStrongDroperQuick extends EnnemyDroper{
+public class mobStrongDroperQuick extends EnnemyDroper {
 
 	public mobStrongDroperQuick(Cell cellule) {
 		super(1,300,cellule, new ArrayList<String>());
@@ -13,4 +13,5 @@ public class mobStrongDroperQuick extends EnnemyDroper{
 			this.getContains().add("mobQuickWeak");
 		}
 	}
+
 }

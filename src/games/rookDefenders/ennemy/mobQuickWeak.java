@@ -10,6 +10,4 @@ public class mobQuickWeak extends Ennemy {
 		// TODO Auto-generated constructor stub
 	}
 
-
-
 }
