@@ -1,6 +1,5 @@
 package games.rookDefenders;
 
-import java.io.File;
 import java.util.ArrayList;
 
 import org.newdawn.slick.GameContainer;
@@ -15,11 +14,10 @@ import games.rookDefenders.tower.core.Tower;
 
 public class World extends BasicGameState{
 
-	public final static String GAME_NAME="Rook Defenders";
-	public final static String GAME_FOLDER_NAME="rookDefenders";
-	public final static String DIRECTORY_SOUNDS="/sounds"+File.separator+GAME_FOLDER_NAME+File.separator;
-	public final static String DIRECTORY_MUSICS="/musics"+File.separator+GAME_FOLDER_NAME+File.separator;
-	public final static String DIRECTORY_IMAGES="/images"+File.separator+GAME_FOLDER_NAME+File.separator;
+
+	public final static String DIRECTORY_SOUNDS="/sounds/rookDefenders/";
+	public final static String DIRECTORY_MUSICS="/musics/rookDefenders/";
+	public final static String DIRECTORY_IMAGES="/images/rookDefenders/";
 
 	private ArrayList<Ennemy> ennemy;
 	private ArrayList<Tower> tower;
